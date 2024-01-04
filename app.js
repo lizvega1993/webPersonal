@@ -1,6 +1,3 @@
- function contacto(){
-
- };
 let imagenes = [
     {
         "url": "img/Carrusel-01.png",
