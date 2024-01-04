@@ -11,25 +11,32 @@
 .headerNav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: "single day";
     font-size: 25px;
+    position:fixed;
 }
-.headerNav i{
-    width: 10px;
-    margin: 30px;
-    padding-left: 20px;    
-}
+
 .headerNav h1{
-    padding-left: 40px;
+    padding-left: 80px;
+    justify-content: start;
+    
+}
+.navUl{
+   
+    justify-content:right;
+    position:fixed;
+    top:0;
+    width:90%;
+    
 }
 .headerNav ul{
+    margin: 20px;
     display: flex;
     list-style: none;
     color: black;
-    justify-content: space-between;
-    padding-left: 350px;
     gap:20px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
 }
 .headerNav a{
@@ -49,24 +56,30 @@
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     gap: 100px;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .sectionDiv h2{
-    font-size: 40px;
-    color:blueviolet;
+    padding: 50px; 
+    font-size: 70px;
+    color:#751375;
+}
+.sectionDiv span{
+    font-family: "Rubik Doodle Shadow";
+    font-size: 80px;
+    color: #751375;
 }
 .sectionDiv p{
-    text-align: center;
+    margin-left: 50px;
+    padding-left: 20px; 
+    font-size: 18px;
     text-align:justify;
 }
-.SectionDiv2 img{
-    border-radius: 25px;
-}
-.SectionDiv2 button{ 
-    background-color: #e4c2fb;
+.sectionDiv button{ 
+    margin: 10px ;
+    background-color: transparent;
     border-radius: 100px;
-    box-shadow: rgba(142, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(142, 44, 187, 0.2) 0 1px 2px,rgba(142, 44, 187, 0.2) 0 2px 4px,rgba(142, 44, 187, 0.2) 0 4px 8px,rgba(142, 44, 187, 0.2) 0 8px 16px,rgba(142, 44, 187, 0.2) 0 16px 32px;
-    color: white;
+    color:  #751375;
     cursor: pointer;
     display: inline-block;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -80,40 +93,40 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     gap: 100px;
+    border: 2px solid #751375;
 }
-.SectionDiv2 button:hover{
-    box-shadow: rgba(118, 44, 187, 0.35) 0 -25px 18px -14px inset,rgba(118, 44, 187, 0.35) 0 1px 2px,rgba(118, 44, 187, 0.35) 0 2px 4px,rgba118, (44, 187, 0.35) 0 4px 8px,rgba(118, 44, 187, 0.35) 0 8px 16px,rgba(118, 44, 187, 0.35) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
+.sectionDiv button:hover{
+    background: #751375; 
+    color: white;
 }
-.SectionDiv2 button:hover {
-    background: #e303e3; /* Cambia el color de fondo al pasar el mouse */
+.sectionDiv2 img{
+    width: 90%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    
 }
 /*--------------------------------Estilo sobre mi---------------------------*/
 .sobreMi{
     font-size: 25px;
-    margin: 30px;
-    padding: 10px;
+    margin:0px 70px 0px 70px;
     text-align: center;
     align-items: center;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
 }
 .sobreMi h2{
     margin: 20px;
-    padding: 10px;
     text-align: center;
     justify-content: space-around;
     font-weight: 700;
 }
 .sobreMi div{
     display: flex;
-    margin: 20px;
-    padding: 20px;
-    font-size: 20px;
+    margin: 40px;
+    font-size: 18px;
     text-align: center;
     align-items: center;
-    background-color: rgba(199, 152, 243, 0.15);
-    border-radius: 25px;
-    box-shadow: rgba(142, 44, 187, 0.1) 0 -25px 18px -14px inset,rgba(142, 44, 187, 0.1) 0 1px 2px,rgba(142, 44, 187, 0.1) 0 2px 2px,rgba(142, 44, 187, 0.1) 0 4px 6px,rgba(142, 44, 187, 0.2) 0 8px 8px,rgba(142, 44, 187, 0.2) 0 10px 10px;
 }
 
 .sobreMi p{
@@ -123,9 +136,8 @@
 .mainProyec h3{
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     font-size: 35px;
-    margin: 20px;
-    padding: 10px;
-    color: #5E17EB;
+    margin: 10px;
+    color: #751375;
 }
 .carrusel{
     display: flex;
@@ -166,7 +178,6 @@
     border-radius: 30px;
 }
 .texto h3{
-    text-shadow: 0px 0px 15px black;
     padding-top: 30px;
     color: black;
     font-weight: 300;
@@ -201,7 +212,6 @@
     font-weight: 300;
     margin: 20px;
     padding: 20px;
-    text-shadow: 0px 0px 10px #000000;
 }
 
 .puntos{
@@ -240,8 +250,7 @@ h4{
     align-items: center;
     font-size: 30px;
     font-weight: 600;
-    color: #5E17EB;
-    backdrop-filter: blur(20px);
+    color: #832561;
   }
 
   .arti-container{
@@ -268,7 +277,6 @@ h4{
   .div-experiencia1 {
     display: flex;
     border-radius:15px 50px;
-    backdrop-filter: blur(20px);
     padding-top: 30px;
     color: black;
     font-weight: 300;
@@ -278,8 +286,6 @@ h4{
     font-size: 19px;
     margin: 20px; 
     padding: 10px;
-    background-color: rgba(194, 146, 238, 0.15);
-    box-shadow: rgba(44, 6, 61, 0.1) 0 -25px 18px -14px inset,rgba(44, 6, 61, 0.1) 0 1px 2px,rgba(44, 6, 61, 0.1) 0 2px 2px,rgba(44, 6, 61, 0.1) 0 4px 6px,rgba(44, 6, 61, 0.1) 0 8px 8px,rgba(44, 6, 61, 0.1) 0 10px 10px;
 }
    .div-experiencia1 ul{
     margin: 8px;
@@ -335,25 +341,25 @@ h4{
     grid-gap: 10px; 
     margin-top: 90px; 
     background-color:  rgba(152, 158, 243, 0.25);
-    box-shadow: rgba(1152, 158, 243, 0.25) 0 -25px 18px -14px inset,rgba(152, 158, 243, 0.25) 0 1px 2px,rgba(152, 158, 243, 0.25) 0 2px 2px,rgba(152, 158, 243, 0.25) 0 4px 6px,rgba(152, 158, 243, 0.25) 0 8px 8px,rgba(152, 158, 243, 0.25) 0 10px 10px;
     border-radius: 15px 50px;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
 }
 
-.container-form h6 {
-    margin-bottom: 15px; 
+.container-form h6 { 
     font-size: 35px;
+    margin-bottom: 15px;
 }
 
 .container-form p {
+    margin-left: 40px;
     font-size: 17px; 
-    line-height: 1.6; 
-    margin-bottom: 20px; 
+    line-height: 1.6;  
     text-align:justify;
 }
 
 
 .container-form a {
+    margin-left: 40px;
     font-size: 20px; 
     display: inline-block; 
     text-decoration: none; 
@@ -361,11 +367,12 @@ h4{
     margin-bottom: 5px; 
     color: black; 
     font-weight: 700; 
+    text-align: left;
 }
 
 
 .container-form a i {
-    color: #5E17EB; 
+    color: #751375; 
     margin-right: 10px; 
 }
 .formato{
@@ -373,7 +380,6 @@ h4{
     padding: 10px;
     appearance: none;
     outline: none;
-
 }
 .container-form form .campo,
 .container-form form textarea {
@@ -384,23 +390,23 @@ h4{
     margin-bottom: 5px; 
     background: transparent;
     bottom: 0;
-    border-bottom: 1px solid rgba(46, 11, 56, 0.911);
+    border-bottom: 1px solid rgba(46, 11, 56, 0.11);
 }
 
 .container-form:focus form .campo,
 .container-form:focus form textarea {
-    border-bottom: 1px double rgba(46, 11, 56, 0.911);
+    border-bottom: 1px double rgba(46, 11, 56, 0.511);
   }
   
 .container-form:hover form .campo,
 .container-form:hover form textarea  {
-    border-bottom: 2px double rgba(46, 11, 56, 0.911);
+    border-bottom: 2px double rgba(46, 11, 56, 0.411);
+    cursor: pointer;
 }
-
 ::placeholder {
-    color: white;
+    color: black;
     font-size: 19px;
-    
+    opacity: 0.15;
   }
 
 .container-form form textarea {
@@ -411,10 +417,10 @@ h4{
 }
 
 .container-form .btn-enviar {
-    background-color:rgba(93, 21, 116, 0.611);
+    margin: 10px ;
+    background-color: transparent;
     border-radius: 100px;
-    box-shadow: rgba(152, 158, 243, 0.711) 0 -15px 8px -4px inset,rgba(152, 158, 243, 0.711) 0 1px 2px,rgba(152, 158, 243, 0.711) 0 2px 2px,rgba(152, 158, 243, 0.711) 0 4px 4px,rgba(152, 158, 243, 0.711) 0 8px 16px,rgba(152, 158, 243, 0.711) 0 10px 10px;
-    color: white;
+    color:  #751375;
     cursor: pointer;
     display: inline-block;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -428,24 +434,24 @@ h4{
     -webkit-user-select: none;
     touch-action: manipulation;
     gap: 100px;
+    border: 2px solid #751375;
     
 }
-.SectionDiv2 button:hover{
-    box-shadow: rgba(46, 11, 56, 0.911) 0 -25px 18px -14px inset,rgba(181, 6, 235, 0.911) 0 1px 2px,rgba(181, 6, 235, 0.911) 0 2px 4px,rgba(181, 6, 235, 0.911) 0 4px 8px,rgba(181, 6, 235, 0.911) 0 8px 16px,rgba(181, 6, 235, 0.911) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
-}
+
 .container-form .btn-enviar:hover {
-    background: rgba(18, 3, 22, 0.911); /* Cambia el color de fondo al pasar el mouse */
+    background: #751375; 
+    color: white;/* Cambia el color de fondo al pasar el mouse */
 }
 /*------------------------------------------------Estilo de footer---------------------------------------------------------*/
 footer{
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     align-items: center; 
-    font-size: 30px;
+    font-size: 20px;
 }
 footer i{
+font-size:xx-large;
     display: flex;
     justify-content: space-between;  
-    color: #5E17EB;
+    color: #751375;
    
 }
