@@ -206,7 +206,13 @@
     height: 100px;
     transition: 1s;
 }
-
+.imagenes .verMas{
+    margin: 10px;
+    align-items: center;
+    text-align:justify;    
+    color:black;
+    font-size: 0px;
+}
 .imagenes:hover .texto{
     transition: height 1s, transform 1s, background-color 1s;
     transform: translateY(-150px);
@@ -506,4 +512,7 @@ footer i{
     justify-content: space-between;  
     color: #751375;
    
+}
+.text-center{
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
 }
