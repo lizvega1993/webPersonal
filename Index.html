@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/531ac7ac07.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Liz Vega</title>
+</head>
+<body background="img/Fondo-02.jpg">
+    
+    <!--Creacion de barra de navegacion-->
+    <header class="container">
+        <nav class="headerNav">   
+            <i class="fa-solid fa-cat fa-2xl"></i>
+            <h1>Liz Vega</h1>
+            <ul class="navUl"> 
+                <a lass="list-link"href="#inicio"><li>Inicio</li></a>
+                <a lass="list-link"href="#sobreMi"><li>Sobre Mí</li></a>
+                <a lass="list-link"href="#proyectos"><li>Proyectos</li></a>
+                <a lass="list-link"href="#resumen"><li>Mi Camino</li></a>
+                <a lass="list-link"href="#habilidades"><li>Habilidades</li></a>
+                <a lass="list-link"href="#contacto"><li>Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <!--Introduccion y presentacion-->
+        <section id="inicio" class="mainContainer">
+
+            <div class="sectionDiv">
+                <h2>Desarrolladora Web</h2>
+                <p>Bienvenido! Soy Liz Vega</p>
+                <p>Aquí encontrarás una colección de mi trabajo y experiencias en el desarrollo web y programación, reflejando mi pasión por desarrollo web.</p>
+                <p>  Explora con confianza y descubre el viaje creativo y profesional que he recorrido.</p>
+                <p> ¡Espero que encuentres inspiración y disfrutes de lo que ves!</p>
+            </div>
+            <div class="SectionDiv2">
+                <img src="img/perfil.png">
+                <button download="documentos/CV Lizeth Vega Gomez.pdf">Descarga CV</button>
+                <button onclick="Contacto()">Contacto</button>
+            </div>
+        </section>
+        <section id="sobreMi" class="sobreMi">
+            <h2>Sobre Mí</h2>
+            <div class="sectionSobreMi">
+            
+                <p>Ingeniera Química con amplia experiencia y habilidades destacadas en el desarrollo web. Experiencia en el diseño y desarrollo tanto de la parte frontaend como Backend de sitios y aplicaciones web. Mis conocimientos abarcan base de datos MongoDB, HTML, CSS, JavaScript, MySQL, JavaScrip, Python y Java, y estoy familiarizado con herramientas de diseño como Figma y frameworks como Angular y React. Actualizado en las últimas tendencias y tecnologías web, incluyendo la creación y optimización de gráficos y contenido multimedia. Cuento con capacidades para trabajar en equipo, planeación estratégica, liderazgo y trabajo orientado a resultados.</p>
+               
+            </div>
+        </section>
+        <!-- proyectos Carrusel de muestra de trabajos-->
+        <section id="proyectos" class="mainProyec">
+            <h3>Mis Proyectos</h3>
+            <div class="carrusel">
+                <div class="atras">
+                    <img id="atras" src="img/atras.svg" alt="atras" loading="lazy">
+                </div>
+        
+                <div class="imagenes">
+                    <div id="img">
+                        <img class="img" src="img/Carrusel-01.png" alt="imagen 1" loading="lazy">
+                    </div>
+                    
+                    <div id="texto" class="texto">
+                        <h3>Transformando ideas en experiencias digitales</h3>
+                        <p>En nuestros proyectos de desarrollo web, creamos plataformas dinámicas y funcionales, desde el diseño personalizado hasta la implementación de tecnologías de vanguardia. Nos comprometemos a optimizar el rendimiento, la experiencia del usuario y la adaptabilidad móvil.</p>
+                    </div>
+                </div>
+        
+                <div class="adelante" id="adelante">
+                    <img src="img/adelante.svg" alt="adelante" loading="lazy">
+                </div>
+            </div>
+        
+            <div class="puntos" id="puntos"></div>
+            <script src="app.js"></script>
+        </section>
+        <!--resumen-->
+        <section id="resumen" >
+            <h4>Mi Camino</h4>
+            <div class="containerResumen">
+                <p>Experiencia</p>
+                <p>Educacion</p>
+            </div>
+            <article class="arti-container">
+                    <div class="div-container">
+                        <div class="div-experiencia1">
+                        <p class="experienciaAño"> 2024</p>
+                        <ul>
+                            <li class="Cargo">Cargo</li>
+                            <li class="empresa">Empresa</li>
+                            <li class="funciones">Funciones Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iusto amet, accusantium mollitia architecto quis, odio optio aliquid a quisquam ducimus sed, praesentium nesciunt quod magnam laudantium totam sunt sapiente!</li>
+                        </ul>
+                    </div>     
+                <div class="div-container">
+                    <div class="div-experiencia1">
+                        <p class="experienciaAño"> 2024</p>
+                        <ul>
+                            <li class="Cargo">Cargo</li>
+                            <li class="empresa">Empresa</li>
+                            <li class="funciones">Funciones Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iusto amet, accusantium mollitia architecto quis, odio optio aliquid a quisquam ducimus sed, praesentium nesciunt quod magnam laudantium totam sunt sapiente!</li>
+                        </ul>
+                    </div>     
+                </div>
+            </article>
+        </section>
+        <!--Habilidades-->
+        <section id="habilidades" class="habilidades">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officia perferendis incidunt labore minima corrupti itaque dolores optio, placeat quas earum illo consectetur. Eius, ratione soluta dicta ducimus rem accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vel obcaecati beatae quibusdam, et totam praesentium! Odio quisquam explicabo dolorum laudantium alias fugit inventore totam reiciendis, ad, et asperiores porro?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia omnis iste architecto beatae totam, atque, autem impedit, ex reprehenderit id. Quisquam quod harum architecto aliquam libero placeat sit sequi!</p>
+            <h5>Habilidades</h5>
+        </section>
+        <section id="contacto">
+            <div class="container-form">
+                <div class="info-form">
+                    <h6>Contácto</h6>
+                    <p>Si tienes preguntas, comentarios o simplemente quieres saludar, no dudes en ponerte en contacto con nosotros. Estamos comprometidos en brindarte la mejor atención posible.</p>
+                    <a href="#"><i class="fa fa-phone"></i> +57 319 541 0407</a>
+                    <a href="#"><i class="fa fa-envelope"></i> Lizethvegagomez@hotmail.com</a>
+                    <a href="#"><i class="fa fa-map-marked"></i>Colombia</a>
+                </div>
+                <div class="formato">
+                    <form class="form-input" action="https://formsubmit.co/lizethvegagomez@hotmail.com" method="POST" target="_blank" autocomplete="off">
+                    <input type="text" name="Nombre" placeholder="Tu Nombre" class="campo" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electronico " pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="campo" required>
+                    <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea >
+                    <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+                    </section>
+                    </div>
+    </main>
+    <!--Contacto-->
+    <footer>
+        <footer class="text-center bg-body-tertiary">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Instagram -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+                
+                <!-- Linkedin -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-link btn-floating btn-lg text-body m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3">
+              © 2023 Copyright:
+              <a class="text-body">Liz Vega</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
