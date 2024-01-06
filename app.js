@@ -2,7 +2,7 @@ let imagenes = [
     {
         "url": "img/Carrusel-01.png",
         "nombre": "Transformando ideas en experiencias digitales",
-        "descripcion": "En nuestros proyectos de desarrollo web, creamos plataformas dinámicas y funcionales, desde el diseño personalizado hasta la implementación de tecnologías de vanguardia. Nos comprometemos a optimizar el rendimiento, la experiencia del usuario y la adaptabilidad móvil."
+        "descripcion": "En nuestros proyectos de desarrollo web, creamos plataformas dinámicas y funcionales, desde el diseño personalizado hasta la implementación de tecnologías de vanguardia."
 
     },
     {
