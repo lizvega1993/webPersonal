@@ -20,6 +20,7 @@
     top: 0;
     width: 100%;
     background-color: #751375e8;
+    z-index:9999 
 }
 .headerNav h1{
     font-size: 40px;
@@ -30,12 +31,17 @@
 
     
 }
-.navUl{
+.navUl{ 
+    display: flex;
+    place-content: space-between;
     padding-right: 2%;
-    justify-content:right;
     top:0;
     width:90%;
     border-radius: 5px;
+}
+#menu,
+#menu-check{
+    display: none;
 }
 .headerNav ul{
     display: flex;
@@ -106,7 +112,7 @@
 }
 .sectionDiv2 img{
     align-items: center;
-    width: 100%;
+    width: 70%;
     border-top-left-radius: 100px;
     border-top-right-radius: 160px;
     border-bottom-left-radius: 160px;
@@ -120,6 +126,11 @@
     text-align: center;
     align-items: center;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+}
+.gridSobreMi{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
 }
 .sobreMi h2{
     margin: 45px;
@@ -250,34 +261,38 @@
     margin-top: 20px;
     font-weight: bold;
 }
-.containerResumen{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+.grid{
+    margin: 6%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    column-gap: 2%;
+}
+.gridExperiencia{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.gridParrafo{
+    margin-bottom: 5%;
     font-size: 30px;
     font-weight: 600;
     color: #832561;
 }
-  .arti-container{
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .div-container{
-    padding: 10px;
-  }
-  .div-caract1 {
-    display: flex;
+.añoExperiencia {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% 80%;
     align-items: center;
     font-size: 19px;
 }
+
 .div-caract1 ul{
     margin: 8px;
-    list-style: none;
     margin-left: 8px;
 }    
 .experienciaAño{
+    margin: 6%;
+    text-align: center;
     color: #832561;
 }
 .Cargo{
@@ -292,6 +307,7 @@
 }
 .funciones li{
     text-align:justify;
+    list-style: none;
 }
 /*------------------------------------------------Estilo de habilidades---------------------------------------------------------*/
 .habilidades{
@@ -389,7 +405,7 @@
     max-width: 1250px; 
     margin: 20px; 
     display: grid; 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
     grid-gap: 10px; 
     margin-top: 90px; 
     background-color:  rgba(152, 158, 243, 0.25);
@@ -550,9 +566,78 @@ footer i{
     }
 }
 /*-------Desing Responsive Ipad 13Pro-------*/
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
     .headerNav h1{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    .navUl{
+        display: flex;
+    }
+    #menu-check:not(:checked) ~ .navUl{
+        display: none;
+    }
+    #menu-check::checked ~ .navUl{
+        display: block;
+    }
+    #menu{
+        display: block;
+        margin-right:3% ;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        font-weight: 500;
+        position: absolute;
+        right:2% ;
+        z-index:9999 ;
+    }
+    #menu:hover{
+        color: white;
+        background: #270627e8;
+        border-radius: 3px;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
+    .nav {
+        position: absolute;
+        height: 100%;
+        background-color: #a208df88;
+        padding-top: 2%;
+        padding-right: 10%;
+        flex-direction: column;
+        background-color: white;
+        display: block;
+        text-align: right;
+    }
+     .navUl {
+        flex-direction: column;
+        display: block;
+        text-align: right;
+    }
+
+    .mainContainer{
+        margin: 10%;
+    }
+    .sectionDiv{
+        margin:0;
+        transform: translateY(290px);
+        margin-bottom: 10%;
+    }
+    .sectionDiv p{
+        margin-left: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sectionDiv2 img{
+        transform: translateY(-420px);
+        border-radius: 70px 100px;
+    }
+    .gridSobreMi{
+        grid-template-columns: 100%;
     }
     .sobreMi h2{
         margin: 0.5%;
@@ -584,5 +669,18 @@ footer i{
         margin: 2%;
         padding: 2%;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;   
+    }
+    .añoExperiencia {
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        padding:10% 0% 10% 0%;
     
+    }
+    .container-form {
+        grid-template-columns: 100%;
+        border-radius: 50px 50px;
+    }
 }
